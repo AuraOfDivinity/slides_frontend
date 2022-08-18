@@ -17,8 +17,8 @@ const Carousel = ({ slides }) => {
 
   return (
     <div className="wrapper">
-      <FaChevronLeft className="leftArrow" onClick={prevSlide} />
-      <FaChevronRight className="rightArrow" onClick={nextSlide} />
+      <FaChevronLeft className="leftArrow" onClick={prevSlide} style={{display: length > 1 ? "inline": "none"}}/>
+      <FaChevronRight className="rightArrow" onClick={nextSlide} style={{display: length > 1 ? "inline": "none"}}/>
       {slides.map((slide, index) => {
         return (
           <div key={index}>
