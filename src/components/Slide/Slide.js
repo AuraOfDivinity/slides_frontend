@@ -9,9 +9,9 @@ const SubTitle = withGeneralStyling(Text)
 export default function Slide({slide}) {
     return (
         <div className="slide-wrapper">
-            <img src={slide.image} className='slide-image' alt=""/>
-            <HeaderText content='hello title'/>
-            <SubTitle content='worrld'/>
+            <img src={slide.image_url} className='slide-image' alt=""/>
+            <HeaderText content={slide.title}/>
+            <SubTitle content={slide.sub_title}/>
         </div>
     )
 }
