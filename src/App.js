@@ -1,23 +1,29 @@
-import logo from './logo.svg';
 import './App.css';
+import Slider from './components/Carousel/Carousel';
 
 function App() {
+  const ImageData = [
+    {
+      image:
+        "https://images.unsplash.com/photo-1546190255-451a91afc548?ixlib=rb-1.2.1"
+    },
+    {
+      image:
+        "https://images.unsplash.com/photo-1591348122449-02525d70379b?ixlib=rb-1.2.1"
+    },
+    {
+      image:
+        "https://images.unsplash.com/photo-1548802673-380ab8ebc7b7?ixlib=rb-1.2.1"
+    },
+    {
+      image:
+        "https://images.unsplash.com/photo-1577023311546-cdc07a8454d9?ixlib=rb-1.2.1"
+    }
+  ];
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Slider slides={ImageData}/>
     </div>
   );
 }
